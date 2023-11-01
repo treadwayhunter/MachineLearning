@@ -12,7 +12,7 @@ audience_score_list = []
 critic_score_list = []
 total_views_list = []
 
-for i in range(1000):
+for i in range(100000):
     movie_list.append(f'Movie {i}')
 
     a_score = random.random()
@@ -33,6 +33,8 @@ for i in range(1000):
     
     views = round(func(1000000)*multiplier)
     total_views_list.append(views)
+
+# Generate csv file
 
 data = {
     'movie_title': movie_list,
